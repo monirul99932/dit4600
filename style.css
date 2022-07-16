@@ -1,0 +1,706 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    content: '';
+}
+
+.container{
+    max-width: 800px;
+    margin: auto;
+}
+/* for Background Color */
+.bgc{
+    background-color: rgb(71, 81, 223);
+}
+
+/* ====root==== */
+
+
+
+/* -------------header design //starte---------- */
+header{
+    background-color: rgb(71, 81, 223);
+    padding: 5px 0 5px 0;
+    /* position: sticky;
+    top: 0; */
+}
+
+.tagtitle{
+    text-align: center;
+}
+
+.tagtitle h4{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* navigation */
+.logo{
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: inline-flex;
+}
+
+nav ul li{
+    width: 80px;
+    cursor: pointer;
+    margin: 4px;
+    color: white;
+    text-align: center;
+}
+
+nav ul li:hover,.logo:hover{
+    box-shadow: 2px 2px 5px black;
+    transition: .3s;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+}
+/* -------------header design //end---------- */
+
+
+
+/* ------srtar======= Main Content is Here======--------- */
+/* ------srtar======= Main Content is Here======--------- */
+main{
+    system: '';
+}
+/* .............>>>>>main tag */
+
+
+
+/* ------=====top card=====------ */
+.topcard{
+    margin-top: 50px;
+}
+
+.top-title{
+    background-color: rgb(71, 81, 223);
+    color: white;
+}
+
+.top-title h1{
+    text-align: center;
+    font-style: 22px;
+    font-weight: 200;
+    margin-bottom: 18px;
+}
+
+.card-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    height: 200px;
+    width: 160px;
+    /* background-color: rgb(147, 153, 248); */
+    background-color: rgb(71, 81, 223);
+    /* background-color: grey; */
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px gray;
+    cursor: pointer;
+}
+
+/* card hover */
+.card:hover{
+    transform: translateY(-10px);
+    transition: .4s;
+}
+
+.cardimg{
+    height: 50%;
+}
+
+.cardimg img{
+    height: 100%;
+    width: 100%;
+}
+
+.cardbody{
+    height: 50%;
+    padding: 0 2px 0 2px;
+}
+
+.card-title{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-top: 2px;
+    color:white;
+}
+
+.card-desc{
+    font-size: 14px;
+    text-align: justify;
+    color: white;
+}
+/* ------end======= Main Content is Here======--------- */
+/* ------end======= Main Content is Here======--------- */
+
+
+/* -------start=======services=====-------------- */
+/* -------start=======services=====-------------- */
+.services{
+    height: 320px;
+    margin-top: 50px;
+    background-color: rgb(71, 81, 223);
+    margin-bottom: 50px;
+}
+
+.spost-text{
+    width: 60%;
+    height: 320px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.spost-text h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    text-decoration: underline;
+    margin-bottom: 6px;
+}
+
+
+.spost-btn{
+    height: 60px;
+    width: 60px;
+    margin-top: 8px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spostanim2 4s infinite;
+}
+
+.spost-btn:hover{
+    color: red;
+    transform: rotateX();
+}
+
+/* spost image is here */
+.spost-img{
+    width: 50%;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spost-img img{
+    height: 80%;
+    position: relative;
+    box-shadow: 3px 3px 6px #353535;
+    border-radius: 100%;
+    animation: spostanim 7s infinite;
+}
+
+.spost-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------>>>>>--spost image animation */
+
+@keyframes spostanim {
+    0%,50%,100%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-20px);
+    }
+    75%{
+        transform: translateY(-20px);
+    }
+}
+/* ------->spost animation ..2 */
+@keyframes spostanim2 {
+    0%,50%,100%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-5px);
+    }
+    75%{
+        transform: translateY(-5px);
+    }
+}
+/* -------end=======services=====-------------- */
+/* -------end=======services=====-------------- */
+
+
+/* -------Start=======Letest Post=====-------------- */
+/* -------Start=======Letest Post=====-------------- */
+/* letest post title */
+.lp-title{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.letest-post{
+    padding-bottom: 40px;
+}
+
+.lpost{
+    display: flex;
+    justify-content: space-between;
+    height: 240px;
+    background: #000;
+    padding: 4px ,2px ,4px ,2px;
+    background-color: white;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+.lpost-img{
+    width: 35%;
+    overflow: hidden;
+}
+
+.lpost-img img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: spostanim2 infinite 3s;
+}
+
+.lpost-title{
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.lpost-text{
+    width: 65%;
+}
+
+.lpost-text p{
+    text-align: justify;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lpost-icon{
+    border-top: 2px solid black;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lpost-icon i{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+
+.lpost-icon i:hover{
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+/* -------end=======Letest Post=====-------------- */
+/* -------end=======Letest Post=====-------------- */
+
+
+
+/* start --------=========stable and ready card----------======== */
+/* start --------=========stable and ready card----------======== */
+
+.stable-service{
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.scard-row{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.s-text{
+    width: 50%;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.s-text h3{
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.s-text p{
+    font-size: 19px;
+    font-weight: 200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 8px;
+}
+
+.s-btn{
+    height: 30px;
+    padding: 0 5px 0 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.s-btn:hover {
+    background-color: rgb(71, 81, 223);
+    transition: 0.7s;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+/* stable content design */
+
+.s-list-img {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+
+.s-list-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    box-shadow: 2px 3px 5px #a2a2a2;
+}
+
+.list{
+    box-shadow: 2px 2px 5px #353535;
+    display: flex;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.s-lists{
+    width: 50%;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.s-list2{
+    background-color: rgb(71, 81, 223);
+    color: white;
+}
+
+.s-list-text{
+    margin-left: 10px;
+}
+
+.s-list-text h2{
+    font-weight: 800;
+    font-size: 15px;
+}
+
+
+/* background-color: rgb(71, 81, 223); */
+
+/* end --------=========stable and ready card----------======== */
+/* end --------=========stable and ready card----------======== */
+
+
+
+/*  */
+.playstore {
+    margin-top: 50px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(71, 81, 223);
+}
+
+.play-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play-text{
+    width: 50%;
+    color: white;
+}
+
+.play-text h1{
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.play-text p{
+    font-size: 17px;
+}
+
+.play-btn{
+    height: 40px;
+    width: 220px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.play-btn img{
+    height: 80%;
+    margin-left: 20px;
+}
+
+.play-btn h2{
+    color: #000;
+    margin-right: 10px;
+}
+
+.play-img{
+    width: 50%;
+    height: 500px;
+}
+
+.play-img img{
+    height: 100%;
+    float: right;
+    position: relative;
+    animation: spostanim2 2s infinite;
+}
+
+.playstore::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background-image: url(wave.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* background-color: rgb(71, 81, 223); */
+/*--->start---->>>> servicex sectoin design */
+/*--->start---->>>> servicex sectoin design */
+.servicess{
+    height: 540px;
+}
+
+.servicess-row{
+    display: flex;
+}
+
+.servicess-img{
+    height: 350px;
+}
+
+.servicess-img img{
+    height: 100%;
+    position: relative;
+    top: 100px;
+    animation: spostanim2 infinite 2s;
+}
+
+.servicess-card{
+    display: flex;
+}
+
+.sc-card:hover{
+    transition: .3s;
+    transform: translateY(-10px);
+}
+
+.sc-card{
+    height: 220px;
+    width: 140px;
+    margin: 10px;
+    padding: 4px;
+    box-shadow: 2px 2px 7px rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.sc-card i{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.sc-card:hover.sc-card i{
+    color: rgb(71, 81, 223);
+}
+
+.sc1{
+    position: relative;
+    top: 150px;
+}
+
+
+.sc2{
+    position: relative;
+}
+
+.sc3{
+    position: relative;
+    top: 150px;
+}
+
+.sc4{
+    position: relative;
+    top: 300px;
+    left: -320px;
+}
+
+/*--->end---->>>> servicex sectoin design */
+/*--->end---->>>> servicex sectoin design */
+
+
+/* ------------------version------------------ */
+.version{
+    margin-top: 100px;
+    height: 400px;
+}
+
+.version-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.version-img{
+    height: 300px;
+    width: 50%;
+}
+
+.version-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.version-text{
+    width: 50%;
+    margin-left: 20px;
+}
+
+.version-text i{
+    color: rgb(68, 68, 192);
+}
+
+.version-text p{
+    margin-top: 20px;
+    font-size: 19px;
+}
+
+.v1 ,.v2{
+    display: flex;
+    align-items: center;
+}
+
+
+.version-text i{
+    margin-right: 4px;
+}
+
+/* ------------------version------------------ */
+
+
+
+
+
+
+
+
+
+/* -------------footer------------------ */
+/* -------------footer------------------ */
+
+footer{
+    background-color: rgb(71, 81, 223);
+}
+
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.frow1 ,.frow2,.frow3,.frow4{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.frow1 a,.frow2 a,.frow3 a,.frow4 a{
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+
+/* ------///copyright///-------- */
+.copy-row{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.copy{
+    font-size: 18px;
+}
+
+.copy-icon i{
+    font-size: 29px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.copy-icon i:hover{
+    color: rgb(71, 81, 223);
+}
+/* screen on html and css */
+@media screen and (max-width:680px) {
+    body{
+        display: none;
+    }
+}
